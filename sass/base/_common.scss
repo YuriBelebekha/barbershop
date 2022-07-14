@@ -1,0 +1,24 @@
+body {
+  font-family: var(--font-family-primary);  
+}
+
+.section {
+  // paddings for MOBILE version
+
+  padding-top: 84px;
+  padding-bottom: 84px;
+
+  // paddings for TABLET version
+
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  // paddings for DESKTOP version
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+}
