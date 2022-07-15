@@ -3,10 +3,18 @@
   --font-family-secondary: 'Raleway', sans-serif;
 
   --color-accent: #ff6c00;
-  --color-dark-bg-primary: #9da4bd;
-  --color-dark-bg-secondary: #ffffff;
-  --color-light-bg-primary: #555555;
-  --color-light-bg-secondary: #303030;
+  --color-text-theme-dark-primary: #9da4bd;
+  --color-text-theme-dark-secondary: #ffffff;
+  --color-text-theme-light-primary: #555555;
+  --color-text-theme-light-secondary: #303030;
 
-  --bg-color-primary: #F7F7F7;
+  --color-white-primary: #ffffff;
+  --color-black-primary: #303030;
+
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f7f7f7;
+  --color-bg-overlay: rgba(25, 28, 38, 0.2);
+
+  --duration: 1250ms;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

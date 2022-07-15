@@ -1,0 +1,30 @@
+.social-media-list {
+  display: flex;
+  position: relative;
+  align-items: center;
+
+  &::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    line-height: 0;
+    background-color: var(--color-black-primary);
+  }
+
+  &__item {    
+    margin-left: 40px;
+    line-height: 0;
+  }
+
+  &__link {
+    @include font(600, 11px, 15px, .2em);
+    color: var(--color-black-primary);
+
+    transition: color var(--duration) var(--timing-function);
+
+    &:hover,
+    &:focus {
+      color: var(--color-accent);
+    }
+  }  
+}

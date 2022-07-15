@@ -1,7 +1,7 @@
 .container {     
 // ALL versions  
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
 
   // MOBILE version
   @media screen and (min-width: 480px) {    
@@ -17,6 +17,8 @@
 
   // DESKTOP version
   @media screen and (min-width: 1200px) {    
-      width: 1200px;    
+      width: 1200px;
+      padding-left: 15px;
+      padding-right: 15px;
   }
 }
