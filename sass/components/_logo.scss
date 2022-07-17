@@ -1,0 +1,31 @@
+.logo__img {
+  fill: var(--color-white-primary);
+}
+
+@media screen and (max-width: 767px) {
+  .logo {
+    display: block;
+    padding-top: 40px;
+    padding-bottom: 40px;    
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 60px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    &__img {
+      fill: var(--color-black-primary);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo {    
+    margin-right: 68px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+}

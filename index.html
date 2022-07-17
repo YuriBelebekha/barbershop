@@ -12,6 +12,8 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="./css/main.min.css" />
+		<!-- slick slider -->
+		<link href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet" />
 	</head>
 
 	<body>
@@ -38,8 +40,10 @@
 						</li>
 					</ul>
 				</nav>
-				<a class="contact-number link" href="tel:+380441111111">+38 044 111 11 11</a>
-				<button class="modal-btn modal-btn-theme-dark" type="button">онлайн-запис</button>
+				<div class="header__inner">
+					<a class="contact-number link" href="tel:+380441111111">+38 044 111 11 11</a>
+					<button class="modal-btn modal-btn-theme-dark" type="button">онлайн-запис</button>
+				</div>
 
 				<button class="mobile-menu-btn" type="button" data-menu-open>
 					<svg class="mobile-menu-btn__icon" width="40" height="40">
@@ -108,7 +112,16 @@
 			<!-- HERO SECTION -->
 
 			<section class="section hero">
-				<div class="container">
+				<!-- start - slick slider for hero -->
+				<div class="slider-wrapper">
+					<div class="slider list">
+						<div class="slider__slide-1 slide"></div>
+						<div class="slider__slide-2 slide"></div>
+						<div class="slider__slide-3 slide"></div>
+					</div>
+				</div>
+				<!-- end - slick slider	for hero -->
+				<div class="container hero__container">
 					<div class="hero__left-side">
 						<ul class="social-media-list list">
 							<li class="social-media-list__item">
@@ -134,6 +147,15 @@
 						</ul>
 					</div>
 					<div class="hero__right-side">
+						<!-- start - slick slider for hero -->
+						<!-- <div class="slider-wrapper">
+							<div class="slider list">
+								<div class="slider__slide-1 slide"></div>
+								<div class="slider__slide-2 slide"></div>
+								<div class="slider__slide-3 slide"></div>
+							</div>
+						</div> -->
+						<!-- end - slick slider	for hero -->
 						<h2 class="overtitle">Чоловіча перукарня в Києві</h2>
 						<h1 class="main-title" lang="en">BarberShop</h1>
 						<p class="slogan">Ми експерти у модних чоловічих стрижках. Працюємо швидко, обережно та зі смаком.</p>
@@ -143,7 +165,7 @@
 
 			<!-- ABOUT SECTION -->
 
-			<section class="section about">
+			<!-- <section class="section about">
 				<div class="container">
 					<div class="about__left-side">
 						<ul class="about-gallery list">
@@ -254,11 +276,11 @@
 						<button class="modal-btn modal-btn-theme-light" type="button">онлайн-запис</button>
 					</div>
 				</div>
-			</section>
+			</section> -->
 
 			<!-- SERVICES SECTION -->
 
-			<section class="section services">
+			<!-- <section class="section services">
 				<div class="container">
 					<p class="overtitle">Проведи час у компанії кращих майстрів</p>
 					<h2 class="title">Послуги та ціни</h2>
@@ -297,11 +319,11 @@
 					</div>
 					<button class="modal-btn modal-btn-theme-dark" type="button">онлайн-запис</button>
 				</div>
-			</section>
+			</section> -->
 
 			<!-- ADVANTAGES SECTION -->
 
-			<section class="section advantages">
+			<!-- <section class="section advantages">
 				<div class="container">
 					<div class="advantages__left-side">
 						<ul class="advantages__list list">
@@ -343,11 +365,11 @@
 						</p>
 					</div>
 				</div>
-			</section>
+			</section> -->
 
 			<!-- MASTERS SECTION -->
 
-			<section class="section masters">
+			<!-- <section class="section masters">
 				<div class="container">
 					<p class="overtitle">Для справжніх поціновувачів атмосфери</p>
 					<h2 class="title">Наші майстри</h2>
@@ -713,11 +735,11 @@
 						</li>
 					</ul>
 				</div>
-			</section>
+			</section> -->
 
 			<!-- GALLERY SECTION -->
 
-			<section class="section gallery">
+			<!-- <section class="section gallery">
 				<div class="container">
 					<h2 class="title">Галерея</h2>
 					<p class="overtitle">Латинською мовою "барба" означає "борода"</p>
@@ -983,10 +1005,10 @@
 						</li>
 					</ul>
 				</div>
-			</section>
+			</section> -->
 
 			<!-- CONTACT SECTION -->
-			<section class="section contact">
+			<!-- <section class="section contact">
 				<div class="container">
 					<div class="contact__left-side">
 						<h2 class="title">Онлайн-запис</h2>
@@ -1050,10 +1072,10 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> -->
 		</main>
 
-		<footer>
+		<!-- <footer>
 			<div class="container">
 				<p class="copyright">&#xa9; Copyright 2022</p>
 				<ul class="social-media-list list">
@@ -1079,8 +1101,12 @@
 					</li>
 				</ul>
 			</div>
-		</footer>
+		</footer> -->
 
 		<script src="./js/menu.js"></script>
+		<!-- slick slider -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<script type="text/javascript" src="./js/slick-slider.js"></script>
 	</body>
 </html>

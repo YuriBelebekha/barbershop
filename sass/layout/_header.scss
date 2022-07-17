@@ -1,8 +1,16 @@
 .header__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-top: 40px;
+  align-items: center; 
+  
+  // temporary background
+  // background-color: #303030;  
 }
 
 // screen 0-767px
@@ -10,7 +18,7 @@
 @media screen and (max-width: 767px) {
   .menu-list,
   .contact-number,
-  .header .modal-btn {
+  .header__inner > .modal-btn {
     display: none;
   }
 
@@ -73,12 +81,19 @@
 
   .mobile-menu-btn {
     padding: 0;
-    line-height: 0;
+    line-height: 0;    
     background-color: transparent;
     border: none;
-
     transition: fill var(--duration) var(--timing-function);
     
+    .header__container & {
+      fill: var(--color-white-primary);
+    }
+
+    .mobile-menu__container & {
+      fill: var(--color-black-primary);
+    }
+
     &:hover,
     &:focus {
       fill: var(--color-accent);
@@ -97,7 +112,7 @@
     }
 
     &__link {
-      @include font(600, 18px, 25px, .10em);
+      @include font(600, 18px, 25px, .1em);
       color: var(--color-black-primary);
       transition: color var(--duration) var(--timing-function);
 
@@ -166,9 +181,12 @@
   }
 }
 
+// screen 768px+
+
 @media screen and (min-width: 768px) {
   .header__container {
-    
+    display: flex;
+    justify-content: space-between;
   }
   
   .mobile-menu,
@@ -183,6 +201,54 @@
 
   .menu-list {
     display: flex;
+
+    &__item:not(:first-child) {
+      margin-left: 24px;
+    }
+  
+    &__link {
+      @include font(600, 12px, 16px, .1em);
+      color: var(--color-text-theme-dark-secondary);
+      transition: color var(--duration) var(--timing-function);
+  
+      &.current,
+      &:hover,
+      &:focus {
+        color: var(--color-accent);
+      }
+    }
+  }
+
+  .header__inner {
+    position: relative;
+  }
+
+  .contact-number {
+    @include font(600, 12px, 16px, .1em);
+    color: var(--color-text-theme-dark-secondary);
+    transition: color var(--duration) var(--timing-function);
+
+    &:hover,
+    &:focus {
+      color: var(--color-accent);
+    }
+  }  
+}
+
+// screen 768-1200px
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .contact-number {
+    position: absolute;
+    top: 60px;
+    left: 22px;
   }
 }
 
+// screen 1200px+
+
+@media screen and (min-width: 1200px) {
+  .contact-number {
+    margin-right: 40px;
+  }
+}
